@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # High Performance Computing
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Let's discover **High Performance Computing in less than 10 minutes**.
 
 ## Getting Started
 
