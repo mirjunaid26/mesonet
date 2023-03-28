@@ -8,13 +8,11 @@ Let's discover **High Performance Computing in less than 10 minutes**.
 
 ## Getting Started
 
-**High Performance Computing (HPC)** refers to the use of advanced computing technologies to solve complex problems that require significant computational power. HPC systems typically consist of large clusters of computers, each with multiple processors or cores, interconnected by high-speed networks. These systems are designed to perform calculations and data analysis tasks at a much faster rate than traditional computing systems.
+**[High Performance Computing (HPC)](https://en.wikipedia.org/wiki/High-performance_computing)** refers to the use of advanced computing technologies to solve complex problems that require significant computational power. HPC systems typically consist of large clusters of computers, each with multiple processors or cores, interconnected by high-speed networks. These systems are designed to perform calculations and data analysis tasks at a much faster rate than traditional computing systems.
 
 HPC is used in a wide range of fields, including scientific research, engineering, finance, and healthcare. It allows researchers and analysts to run simulations, model complex systems, and analyze large amounts of data quickly and efficiently. HPC is particularly important for applications that require large-scale data analysis, such as weather forecasting, gene sequencing, and drug discovery.
 
 To take advantage of HPC systems, applications must be designed to run in parallel, meaning that they can be divided into smaller tasks that can be processed simultaneously on different processors. HPC systems also require specialized software, including programming languages and libraries that are optimized for high-performance computing..
-
-**Learn more** on **[HPC](https://en.wikipedia.org/wiki/High-performance_computing)**.
 
 ### [LIGER](https://supercomputing.ec-nantes.fr/liger) - An x86 Superscalar Water-cooled Cluster
 
@@ -26,9 +24,8 @@ Partners access Liger, whether for open, publishable science or business-sensiti
 
 The 10-rack Atos/BULL DLC system is based on the INTEL Xeon x86 architecture configured in a cube topology with a cold aisle confined.
 
-### What you'll need
-
-- [SLURM](https://slurm.schedmd.com/documentation.html) is an open source, fault-tolerant, and highly scalable cluster management and job scheduling system for large and small Linux clusters. Slurm requires no kernel modifications for its operation and is relatively self-contained. As a cluster workload manager, Slurm has three key functions. First, it allocates exclusive and/or non-exclusive access to resources (compute nodes) to users for some duration of time so they can perform work. Second, it provides a framework for starting, executing, and monitoring work (normally a parallel job) on the set of allocated nodes. Finally, it arbitrates contention for resources by managing a queue of pending work.
+### [SLURM](https://slurm.schedmd.com/documentation.html) 
+Slurm is an open source, fault-tolerant, and highly scalable cluster management and job scheduling system for large and small Linux clusters. Slurm requires no kernel modifications for its operation and is relatively self-contained. As a cluster workload manager, Slurm has three key functions. First, it allocates exclusive and/or non-exclusive access to resources (compute nodes) to users for some duration of time so they can perform work. Second, it provides a framework for starting, executing, and monitoring work (normally a parallel job) on the set of allocated nodes. Finally, it arbitrates contention for resources by managing a queue of pending work.
 
   - SLURM Tutorial
 
@@ -39,7 +36,7 @@ The 10-rack Atos/BULL DLC system is based on the INTEL Xeon x86 architecture con
 
   Below is a sample Slurm script for running a Python code using a Conda environment:
 
-  ```bash
+```bash
 #!/bin/bash
 #SBATCH --job-name=myjob         # create a short name for your job
 #SBATCH --nodes=1                # node count
@@ -54,11 +51,11 @@ module purge
 module load anaconda3/2022.5
 conda activate pytools-env
 python myscript.py
-
 ```
+The first line of a Slurm script specifies the Unix shell to be used.This is followed by a series of #SBATCH directives which set the resource requirements and other parameters of the job. The script above requests 1 CPU-core and 4 GB of memory for 1 minute of run time. The necessary changes to the environment are made by loading the anaconda3/< version > environment module and activating a particular Conda environment. Lastly, the work to be done, which is the execution of a Python script, is specified in the final line.
 
+See below for information about the correspondence between tasks and CPU-cores. If your job fails to finish before the specified time limit then it will be killed. You should use an accurate value for the time limit but include an extra 20% for safety. 
 
-- [Singularity](https://docs.sylabs.io/guides/latest/user-guide/) is a container platform. It allows you to create and run containers that package up pieces of software in a way that is portable and reproducible. You can build a container using SingularityCE on your laptop, and then run it on many of the largest HPC clusters in the world, local university or company clusters, a single server, in the cloud, or on a workstation down the hall. Your container is a single file, and you don’t have to worry about how to install all the software you need on each different operating system.
 
 ## Generate a new site
 
