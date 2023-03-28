@@ -8,9 +8,13 @@ Let's discover **High Performance Computing in less than 10 minutes**.
 
 ## Getting Started
 
-Get started by **creating a new site**.
+**High Performance Computing (HPC)** refers to the use of advanced computing technologies to solve complex problems that require significant computational power. HPC systems typically consist of large clusters of computers, each with multiple processors or cores, interconnected by high-speed networks. These systems are designed to perform calculations and data analysis tasks at a much faster rate than traditional computing systems.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+HPC is used in a wide range of fields, including scientific research, engineering, finance, and healthcare. It allows researchers and analysts to run simulations, model complex systems, and analyze large amounts of data quickly and efficiently. HPC is particularly important for applications that require large-scale data analysis, such as weather forecasting, gene sequencing, and drug discovery.
+
+To take advantage of HPC systems, applications must be designed to run in parallel, meaning that they can be divided into smaller tasks that can be processed simultaneously on different processors. HPC systems also require specialized software, including programming languages and libraries that are optimized for high-performance computing..
+
+**Learn more** on **[HPC](https://en.wikipedia.org/wiki/High-performance_computing)**.
 
 ### What you'll need
 
