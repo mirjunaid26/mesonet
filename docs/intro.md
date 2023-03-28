@@ -28,11 +28,24 @@ The 10-rack Atos/BULL DLC system is based on the INTEL Xeon x86 architecture con
 
 ### What you'll need
 
-- [SLURM](https://slurm.schedmd.com/documentation.html)
-  - Slurm is an open source, fault-tolerant, and highly scalable cluster management and job scheduling system for large and small Linux clusters. Slurm requires no kernel modifications for its operation and is relatively self-contained. As a cluster workload manager, Slurm has three key functions. First, it allocates exclusive and/or non-exclusive access to resources (compute nodes) to users for some duration of time so they can perform work. Second, it provides a framework for starting, executing, and monitoring work (normally a parallel job) on the set of allocated nodes. Finally, it arbitrates contention for resources by managing a queue of pending work.
+- [SLURM](https://slurm.schedmd.com/documentation.html) is an open source, fault-tolerant, and highly scalable cluster management and job scheduling system for large and small Linux clusters. Slurm requires no kernel modifications for its operation and is relatively self-contained. As a cluster workload manager, Slurm has three key functions. First, it allocates exclusive and/or non-exclusive access to resources (compute nodes) to users for some duration of time so they can perform work. Second, it provides a framework for starting, executing, and monitoring work (normally a parallel job) on the set of allocated nodes. Finally, it arbitrates contention for resources by managing a queue of pending work.
 
-- [Singularity](https://docs.sylabs.io/guides/latest/user-guide/)
-  - SingularityCE is a container platform. It allows you to create and run containers that package up pieces of software in a way that is portable and reproducible. You can build a container using SingularityCE on your laptop, and then run it on many of the largest HPC clusters in the world, local university or company clusters, a single server, in the cloud, or on a workstation down the hall. Your container is a single file, and you don’t have to worry about how to install all the software you need on each different operating system.
+  - SLURM Tutorial
+
+  On all of the cluster system, users run programs by submitting scripts to the Slurm job scheduler. A slurm script must do three things:
+  1. prescribe the resource requirements for the job
+  2. set the environment
+  3. specify the work to be carried out in the form of shell commands.
+
+  Below is a sample Slurm script for running a Python code using a Conda environment:
+
+  ```bash
+#!/bin/bash
+#SBATCH --job-name=myjob          # create a short name for your job
+```
+
+
+- [Singularity](https://docs.sylabs.io/guides/latest/user-guide/) is a container platform. It allows you to create and run containers that package up pieces of software in a way that is portable and reproducible. You can build a container using SingularityCE on your laptop, and then run it on many of the largest HPC clusters in the world, local university or company clusters, a single server, in the cloud, or on a workstation down the hall. Your container is a single file, and you don’t have to worry about how to install all the software you need on each different operating system.
 
 ## Generate a new site
 
