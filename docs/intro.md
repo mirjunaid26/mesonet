@@ -42,6 +42,8 @@ The 10-rack Atos/BULL DLC system is based on the INTEL Xeon x86 architecture con
   ```bash
 #!/bin/bash
 #SBATCH --job-name=myjob          # create a short name for your job
+#SBATCH --nodes=1                 # node count
+
 ```
 
 
