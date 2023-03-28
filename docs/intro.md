@@ -16,6 +16,16 @@ To take advantage of HPC systems, applications must be designed to run in parall
 
 **Learn more** on **[HPC](https://en.wikipedia.org/wiki/High-performance_computing)**.
 
+### [LIGER](https://supercomputing.ec-nantes.fr/liger) - An x86 Superscalar Water-cooled Cluster
+
+LIGER is the largest and most capable computational resource available in the western French region, Pays de la Loire, for industrial and academic collaborators. A BULL’s superscalar x86 supercomputer performs a max performance (Rmax) of almost 200 Teraflop/s.
+
+With its Direct Liquid Cooling System (DLC), Liger is the only cluster known in the region water-cooled and showed significantly more energy efficiency than comparable systems, which is essential to control operating costs.
+
+Partners access Liger, whether for open, publishable science or business-sensitive and proprietary research, through the High-Performance Computing Institute of Centrale Nantes (ICI). Partners gain access to one of the fastest Tier-2 regional class high-level HPC infrastructures available, including subject-matter experts, network access, file systems, archive storage, and training/help-line support.
+
+The 10-rack Atos/BULL DLC system is based on the INTEL Xeon x86 architecture configured in a cube topology with a cold aisle confined.
+
 ### What you'll need
 
 - [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
