@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# High Performance Computing (HPC)
+# High Performance Computing
 
 ![Alt text](https://th.bing.com/th/id/R.6591ac6c8fe44efb1f8e11fe48a5b32f?rik=%2bJFy77czuxle3Q&riu=http%3a%2f%2fwww.marktechpost.com%2fwp-content%2fuploads%2f2022%2f08%2f1026-scaled.jpg&ehk=qx%2fwGfi5WUioI41wbgCpxmnkpRMEZbTRA3VSkSdfky8%3d&risl=&pid=ImgRaw&r=0)
 
