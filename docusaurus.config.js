@@ -136,14 +136,4 @@ const config = {
     }),
 };
 
-module.exports = {
-  // ...
-  url: 'https://mirjunaid26.github.io', // Your website URL
-  baseUrl: '/',
-  projectName: 'mirjunaid26.github.io',
-  organizationName: 'mirjunaid26',
-  trailingSlash: false,
-  // ...
-};
-
 module.exports = config;
